@@ -31,7 +31,7 @@
 
 <section id="early" class="content fade-in">
     <h2>Early Career (2010 - 2013)</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Steve_Smith_2014.jpg" alt="Steve Smith Early Career">
+    <img src="https://www.cricket.com.au/news/3307643/best-ive-ever-played-smith-recalls-2015-glory">
     <p>
         Steve Smith debuted in 2010 as a leg-spinning all-rounder.
         Over time, he transformed into Australia's most dependable batsman.
@@ -41,7 +41,7 @@
 
 <section id="rise" class="content fade-in">
     <h2>Rise to Greatness</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Steve_Smith_Ashes_2017.jpg" alt="Steve Smith Ashes 2017">
+    <img src="https://www.cricket.com.au/news/3607747">
     <p>
         Between 2014 and 2017, Smith became the backbone of Australian batting.
         His unorthodox style confused bowlers worldwide.
@@ -51,7 +51,7 @@
 
 <section id="ashes" class="content fade-in">
     <h2>Historic 2019 Ashes Comeback</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Steve_Smith_2019.jpg" alt="Steve Smith 2019 Ashes">
+    <img src="https://admin.thecricketer.com/weblab/Sites/96c8b790-b593-bfda-0ba4-ecd3a9fdefc2/resources/images/site/stevesmithmanheadshot-min.jpg">
     <p>
         After suspension, Smith returned stronger than ever.
         In the 2019 Ashes in England, he scored 774 runs in just 4 matches —
