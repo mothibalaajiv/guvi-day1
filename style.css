@@ -1,23 +1,31 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #ffffff;
+    background: #004B3A;
+    color: white;
 }
 
+/* HEADER */
 header {
+    background: #006A4E;
+    padding: 40px;
     text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    border-bottom: 5px solid #FFCD00;
 }
 
 header h1 {
     font-size: 48px;
+    color: #FFCD00;
     margin: 0;
 }
 
+header p {
+    font-size: 18px;
+}
+
+/* NAVIGATION */
 nav {
-    background: #111827;
+    background: #003B2E;
     padding: 15px;
     text-align: center;
 }
@@ -33,7 +41,7 @@ nav li {
 }
 
 nav a {
-    color: #60a5fa;
+    color: #FFCD00;
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,65 +50,81 @@ nav a:hover {
     color: white;
 }
 
+/* HERO SECTION */
 .hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Steve_Smith_2019.jpg') no-repeat center center/cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 75, 58, 0.7);
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    align-items: center;
+    color: #FFCD00;
+    text-align: center;
 }
 
-.hero img {
-    width: 300px;
-    border-radius: 15px;
-    margin: 20px;
+.hero-overlay h2 {
+    font-size: 40px;
 }
 
-.hero-text {
-    max-width: 500px;
-}
-
+/* CONTENT */
 .content {
     padding: 60px 20px;
     max-width: 900px;
     margin: auto;
+    text-align: center;
+}
+
+.content h2 {
+    color: #FFCD00;
 }
 
 .content img {
     width: 100%;
+    max-width: 700px;
     border-radius: 12px;
-    margin-top: 20px;
+    margin: 20px 0;
+    border: 4px solid #FFCD00;
 }
 
+/* STATS */
 .stats {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    background: #006A4E;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .stat-box {
-    background: #1f2937;
-    padding: 20px;
+    display: inline-block;
+    background: #003B2E;
+    padding: 25px;
+    margin: 15px;
     border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    margin: 10px;
-    transition: transform 0.3s;
+    width: 220px;
+    border: 2px solid #FFCD00;
+    transition: 0.3s;
 }
 
 .stat-box:hover {
     transform: scale(1.1);
-    background: #2563eb;
+    background: #FFCD00;
+    color: #004B3A;
 }
 
+/* FOOTER */
 footer {
+    background: #003B2E;
     text-align: center;
     padding: 20px;
-    background: #111827;
-    margin-top: 40px;
+    border-top: 4px solid #FFCD00;
 }
 
-/* Animation */
+/* ANIMATION */
 .fade-in {
     opacity: 0;
     transform: translateY(40px);
