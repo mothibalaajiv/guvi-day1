@@ -1,39 +1,28 @@
-function addSubject() {
-    const subjectsDiv = document.getElementById("subjects");
+// Scroll animation
+const faders = document.querySelectorAll('.fade-in');
 
-    const div = document.createElement("div");
-    div.innerHTML = `
-        <input type="number" placeholder="Credits" class="credits">
-        <input type="number" placeholder="Grade (0-10)" class="grades">
-    `;
+const appearOptions = {
+    threshold: 0.2
+};
 
-    subjectsDiv.appendChild(div);
-}
-
-function calculateCGPA() {
-    const credits = document.querySelectorAll(".credits");
-    const grades = document.querySelectorAll(".grades");
-
-    let totalCredits = 0;
-    let totalPoints = 0;
-
-    for (let i = 0; i < credits.length; i++) {
-        let credit = parseFloat(credits[i].value);
-        let grade = parseFloat(grades[i].value);
-
-        if (!isNaN(credit) && !isNaN(grade)) {
-            totalCredits += credit;
-            totalPoints += credit * grade;
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
         }
-    }
+    });
+}, appearOptions);
 
-    if (totalCredits === 0) {
-        document.getElementById("result").innerText = "Please enter valid data!";
-        return;
-    }
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
 
-    let cgpa = totalPoints / totalCredits;
-    document.getElementById("result").innerText = "Your CGPA: " + cgpa.toFixed(2);
-}
-
-window.onload = addSubject;  // Add one subject by default
+// Dynamic stat loading
+document.addEventListener("DOMContentLoaded", function() {
+    let avgElement = document.getElementById("avg");
+    let average = 58.0; // Approx Test Average
+    avgElement.innerText = average + "+";
+});
