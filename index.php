@@ -1,144 +1,91 @@
-<?php
-// Sample dynamic data
-$matches = [
-    ["team1" => "India", "team2" => "Australia", "status" => "Live", "score" => "IND 245/6 (42.3)"],
-    ["team1" => "England", "team2" => "Pakistan", "status" => "Upcoming", "score" => "Starts at 7:00 PM"],
-    ["team1" => "South Africa", "team2" => "New Zealand", "status" => "Completed", "score" => "SA won by 5 wickets"]
-];
-
-$news = [
-    "Virat Kohli scores a brilliant century!",
-    "Babar Azam returns as Pakistan captain.",
-    "World Cup 2026 schedule officially announced.",
-    "Young talent shines in U19 tournament."
-];
-?>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cricket World</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
-
-        header {
-            background: #0b3d91;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #072c66;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: yellow;
-        }
-
-        .container {
-            width: 90%;
-            margin: auto;
-            margin-top: 20px;
-        }
-
-        .section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .match-card {
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .live {
-            color: red;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #0b3d91;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        h2 {
-            color: #0b3d91;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Steve Smith - Cricket Legend</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>🏏 Cricket World</h1>
-    <p>Your Daily Cricket Updates</p>
+    <h1>Steve Smith</h1>
+    <p>Australian Cricket Legend</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Live Scores</a>
-    <a href="#">News</a>
-    <a href="#">Teams</a>
-    <a href="#">Schedule</a>
+    <ul>
+        <li><a href="#early">Early Career</a></li>
+        <li><a href="#rise">Rise to Greatness</a></li>
+        <li><a href="#captaincy">Captaincy Era</a></li>
+        <li><a href="#comeback">Comeback</a></li>
+        <li><a href="#stats">Career Stats</a></li>
+    </ul>
 </nav>
 
-<div class="container">
-
-    <!-- Live Matches Section -->
-    <div class="section">
-        <h2>Live & Match Updates</h2>
-
-        <?php foreach($matches as $match) { ?>
-            <div class="match-card">
-                <strong><?php echo $match['team1']; ?> vs <?php echo $match['team2']; ?></strong><br>
-                Status: 
-                <span class="<?php echo strtolower($match['status']) == 'live' ? 'live' : ''; ?>">
-                    <?php echo $match['status']; ?>
-                </span><br>
-                <strong><?php echo $match['score']; ?></strong>
-            </div>
-        <?php } ?>
-
+<section class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Steve_Smith_2019.jpg" alt="Steve Smith">
+    <div class="hero-text">
+        <h2>Modern-Day Batting Genius</h2>
+        <p>One of the greatest Test batsmen of the 21st century.</p>
     </div>
+</section>
 
-    <!-- Latest News Section -->
-    <div class="section">
-        <h2>Latest Cricket News</h2>
-        <ul>
-            <?php foreach($news as $headline) { ?>
-                <li><?php echo $headline; ?></li>
-            <?php } ?>
-        </ul>
+<section id="early" class="content fade-in">
+    <h2>Early Career (2008 - 2012)</h2>
+    <p>
+        Steve Smith began his international career as a leg-spinning all-rounder.
+        He made his Test debut for Australia in 2010 against Pakistan.
+        Initially selected for his bowling, Smith later transformed into a world-class batsman.
+    </p>
+</section>
+
+<section id="rise" class="content fade-in">
+    <h2>Rise to Greatness (2013 - 2016)</h2>
+    <p>
+        Between 2013 and 2016, Smith evolved into Australia's premier batsman.
+        His unusual batting technique and exceptional concentration made him nearly unstoppable.
+        He dominated in the Ashes and against India.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Steve_Smith_Ashes_2017.jpg" alt="Ashes">
+</section>
+
+<section id="captaincy" class="content fade-in">
+    <h2>Captaincy Era (2015 - 2018)</h2>
+    <p>
+        Steve Smith became Australia's Test captain in 2015.
+        Under his leadership, Australia reclaimed the Ashes in 2017-18.
+        However, the 2018 ball-tampering controversy led to a one-year suspension.
+    </p>
+</section>
+
+<section id="comeback" class="content fade-in">
+    <h2>Historic Comeback (2019 Ashes)</h2>
+    <p>
+        In the 2019 Ashes series in England, Smith made one of the greatest comebacks in cricket history.
+        He scored 774 runs in just 4 matches, dominating England's bowling attack.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Steve_Smith_2019_Ashes.jpg" alt="Ashes 2019">
+</section>
+
+<section id="stats" class="content fade-in stats">
+    <h2>Career Statistics</h2>
+    <div class="stat-box">
+        <h3>Test Average</h3>
+        <p id="avg">Loading...</p>
     </div>
-
-</div>
+    <div class="stat-box">
+        <h3>Test Centuries</h3>
+        <p>30+</p>
+    </div>
+    <div class="stat-box">
+        <h3>ICC Rankings</h3>
+        <p>Ranked No.1 Multiple Times</p>
+    </div>
+</section>
 
 <footer>
-    &copy; <?php echo date("Y"); ?> Cricket World | All Rights Reserved
+    <p>© 2026 Steve Smith Career Tribute | Designed by Mothi Balaaji</p>
 </footer>
 
 </body>
